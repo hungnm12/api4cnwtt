@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 
 /**
  * @openapi
- * /it4788/user/logout:
+ * /api/user/logout:
  *   post:
  *     tags:
  *       - API về tài khoản
@@ -34,7 +34,7 @@ router.post('/logout', isAuth, afterLogin.logout);
 
 /**
  * @openapi
- * /it4788/user/change_info_after_signup:
+ * /api/user/change_info_after_signup:
  *   post:
  *     tags:
  *       - API về tài khoản
@@ -67,7 +67,7 @@ router.post(
 
 /**
  * @openapi
- * /it4788/user/change_password:
+ * /api/user/change_password:
  *   post:
  *     tags:
  *       - API về tài khoản
@@ -103,7 +103,7 @@ router.post('/change_password', isAuth, afterLogin.change_password);
 
 /**
  * @openapi
- * /it4788/user/get_push_settings:
+ * /api/user/get_push_settings:
  *   post:
  *     tags:
  *       - API về tài khoản
@@ -126,7 +126,7 @@ router.post('/get_push_settings', isAuth, afterLogin.get_push_settings);
 
 /**
  * @openapi
- * /it4788/user/set_push_settings:
+ * /api/user/set_push_settings:
  *   post:
  *     tags:
  *       - API về tài khoản
@@ -226,7 +226,7 @@ router.post('/set_push_settings', isAuth, afterLogin.set_push_settings);
 
 /**
  * @openapi
- * /it4788/user/set_block:
+ * /api/user/set_block:
  *   post:
  *     tags:
  *       - API về tài khoản
@@ -262,7 +262,7 @@ router.post('/set_block', isAuth, afterLogin.set_block);
 
 /**
  * @openapi
- * /it4788/user/check_new_version:
+ * /api/user/check_new_version:
  *   post:
  *     tags:
  *       - API về tài khoản

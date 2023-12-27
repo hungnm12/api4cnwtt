@@ -5,7 +5,7 @@ const authController = require('../controllers/auth.controller.js');
 
 /**
  * @openapi
- * /it4788/auth/signup:
+ * /api/auth/signup:
  *   post:
  *     tags:
  *       - API về tài khoản
@@ -41,7 +41,7 @@ router.post('/signup', authController.signup);
 
 /**
  * @openapi
- * /it4788/auth/login:
+ * /api/auth/login:
  *   post:
  *     tags:
  *       - API về tài khoản
@@ -70,7 +70,7 @@ router.post('/login', authController.login);
 
 /**
  * @openapi
- * /it4788/auth/get_verify_code:
+ * /api/auth/get_verify_code:
  *   post:
  *     tags:
  *       - API về tài khoản
@@ -92,7 +92,7 @@ router.post('/get_verify_code', authController.getVerifyCode);
 
 /**
  * @openapi
- * /it4788/auth/check_verify_code:
+ * /api/auth/check_verify_code:
  *   post:
  *     tags:
  *       - API về tài khoản

@@ -8,7 +8,7 @@ const { isValidate } = require('../middlewares/validated.middleware.js')
 router.post('/add_post', isAuth, postController.addPost);
 /**
  * @openapi
- * /it4788/post/add_post:
+ * /api/post/add_post:
  *   post:
  *     tags:
  *       - API về POST
@@ -43,7 +43,7 @@ router.post('/add_post', isAuth, postController.addPost);
 router.post('/get_list_posts', isAuth, postController.getListPosts);
 /**
  * @openapi
- * /it4788/post/get_list_posts:
+ * /api/post/get_list_posts:
  *   post:
  *     tags:
  *       - API về POST
@@ -107,7 +107,7 @@ router.post('/get_list_videos', isAuth, postController.getListVideo);
 
 /**
  * @openapi
- * /it4788/post/get_list_videos:
+ * /api/post/get_list_videos:
  *   post:
  *     tags:
  *       - API về POST
@@ -171,7 +171,7 @@ router.post('/get_post', isAuth, postController.getPost);
 
 /**
  * @openapi
- * /it4788/post/get_post:
+ * /api/post/get_post:
  *   post:
  *     tags:
  *       - API về POST
@@ -200,7 +200,7 @@ router.post('/edit_post', isAuth, postController.editPost);
 
 /**
  * @openapi
- * /it4788/post/edit_post:
+ * /api/post/edit_post:
  *   post:
  *     tags:
  *       - API về POST
@@ -277,7 +277,7 @@ router.post('/edit_post', isAuth, postController.editPost);
 router.post('/delete_post', isAuth, postController.deletePost);
 /**
  * @openapi
- * /it4788/post/delete_post:
+ * /api/post/delete_post:
  *   post:
  *     tags:
  *       - API về POST
@@ -305,7 +305,7 @@ router.post('/delete_post', isAuth, postController.deletePost);
 router.post('/report_post', isAuth, postController.reportPost);
 /**
  * @openapi
- * /it4788/post/report_post:
+ * /api/post/report_post:
  *   post:
  *     tags:
  *       - API về POST
@@ -348,7 +348,7 @@ router.post('/feel', isAuth, postController.feel);
 
 /**
  * @openapi
- * /it4788/post/feel:
+ * /api/post/feel:
  *   post:
  *     tags:
  *       - API về POST
@@ -384,7 +384,7 @@ router.post('/search', isAuth, postController.search);
 
 /**
  * @openapi
- * /it4788/post/search:
+ * /api/post/search:
  *   post:
  *     tags:
  *       - API về POST
@@ -434,7 +434,7 @@ router.post('/get_saved_search', isAuth, postController.get_saved_search);
 
 /**
  * @openapi
- * /it4788/post/get_saved_search:
+ * /api/post/get_saved_search:
  *   post:
  *     tags:
  *       - API về POST
@@ -470,7 +470,7 @@ router.post('/del_saved_search', isAuth, postController.del_saved_search);
 
 /**
  * @openapi
- * /it4788/post/del_saved_search:
+ * /api/post/del_saved_search:
  *   post:
  *     tags:
  *       - API về POST

@@ -10,7 +10,7 @@ router.post(
 );
 /**
  * @openapi
- * /it4788/social/get_list_suggested_friends:
+ * /api/social/get_list_suggested_friends:
  *   post:
  *     tags:
  *       - API về social
@@ -46,7 +46,7 @@ router.post('/set_request_friend', isAuth, controller.addFriend);
 
 /**
  * @openapi
- * /it4788/social/set_request_friend:
+ * /api/social/set_request_friend:
  *   post:
  *     tags:
  *       - API về social
@@ -80,7 +80,7 @@ router.post(
 
 /**
  * @openapi
- * /it4788/social/get_requested_friends:
+ * /api/social/get_requested_friends:
  *   post:
  *     tags:
  *       - API về social
@@ -116,7 +116,7 @@ router.post('/get_user_friends', isAuth, controller.getListOfUserFriends);
 
 /**
  * @openapi
- * /it4788/social/get_user_friends:
+ * /api/social/get_user_friends:
  *   post:
  *     tags:
  *       - API về social
@@ -159,7 +159,7 @@ router.post('/set_accept_friend', isAuth, controller.processFriendRequest);
 
 /**
  * @openapi
- * /it4788/social/set_accept_friend:
+ * /api/social/set_accept_friend:
  *   post:
  *     tags:
  *       - API về social
@@ -195,7 +195,7 @@ router.post('/get_list_blocks', isAuth,controller.getListOfBlockedUsers);
 
 /**
  * @openapi
- * /it4788/social/get_list_blocks:
+ * /api/social/get_list_blocks:
  *   post:
  *     tags:
  *       - API về social

@@ -41,11 +41,11 @@ function routes(app) {
     app.use(bodyParser.json({ limit: '50mb' })); // for parsing application/json
     app.use(bodyParser.urlencoded({ limit: '50mb', extended: true })); // for parsing application/x-www-form-urlencoded
     routesArray.forEach((route) => {
-        app.use('/it4788' + route.path, route.router);
+        app.use('/api' + route.path, route.router);
     });
 
-    app.get('/it4788', (req, res) => {
-        res.send('it4788 Mạng xã hội CÓ TÍNH PHÍ !!!!!!!!!');
+    app.get('/api', (req, res) => {
+        res.send('api Mạng xã hội CÓ TÍNH PHÍ !!!!!!!!!');
     });
 }
 

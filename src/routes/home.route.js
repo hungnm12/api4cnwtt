@@ -7,7 +7,7 @@ const { isAuth } = require('../middlewares/auth.middleware.js');
 router.post('/check_new_item', isAuth, homeController.checkNewItem);
 /**
  * @openapi
- * /it4788/home/check_new_item:
+ * /api/home/check_new_item:
  *   post:
  *     tags:
  *       - API về màn hình trang chủ
@@ -37,7 +37,7 @@ router.post('/get_notification', isAuth, homeController.getNotification);
 
 /**
  * @openapi
- * /it4788/home/get_notification:
+ * /api/home/get_notification:
  *   post:
  *     tags:
  *       - API về màn hình trang chủ
@@ -77,7 +77,7 @@ router.post(
 
 /**
  * @openapi
- * /it4788/home/set_read_notification:
+ * /api/home/set_read_notification:
  *   post:
  *     tags:
  *       - API về màn hình trang chủ
@@ -107,7 +107,7 @@ router.post('/set_devtoken', isAuth, homeController.setDevToken);
 
 /**
  * @openapi
- * /it4788/home/set_devtoken:
+ * /api/home/set_devtoken:
  *   post:
  *     tags:
  *       - API về màn hình trang chủ
@@ -143,7 +143,7 @@ router.post('/get_user_info', isAuth, homeController.getUserInfo);
 
 /**
  * @openapi
- * /it4788/home/set_devtoken:
+ * /api/home/set_devtoken:
  *   post:
  *     tags:
  *       - API về màn hình trang chủ
@@ -172,7 +172,7 @@ router.post('/set_user_info', isAuth, homeController.setUserInfo);
 
 /**
  * @openapi
- * /it4788/home/set_user_info:
+ * /api/home/set_user_info:
  *   post:
  *     tags:
  *       - API về màn hình trang chủ

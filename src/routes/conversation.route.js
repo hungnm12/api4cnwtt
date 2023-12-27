@@ -13,7 +13,7 @@ router.post(
 
 /**
  * @openapi
- * /it4788/conversation/get_list_conversation:
+ * /api/conversation/get_list_conversation:
  *   post:
  *     tags:
  *       - API về chat
@@ -54,7 +54,7 @@ router.post(
 
 /**
  * @openapi
- * /it4788/conversation/get_conversation:
+ * /api/conversation/get_conversation:
  *   post:
  *     tags:
  *       - API về chat
@@ -105,7 +105,7 @@ router.post('/set_read_message', isAuth, conversationController.setReadMessage);
 
 /**
  * @openapi
- * /it4788/conversation/set_read_message:
+ * /api/conversation/set_read_message:
  *   post:
  *     tags:
  *       - API về chat
@@ -145,7 +145,7 @@ router.post(
 
 /**
  * @openapi
- * /it4788/conversation/delete_conversation:
+ * /api/conversation/delete_conversation:
  *   post:
  *     tags:
  *       - API về chat
@@ -181,7 +181,7 @@ router.post('/delete_message', isAuth, conversationController.deleteMessage);
 
 /**
  * @openapi
- * /it4788/conversation/delete_message:
+ * /api/conversation/delete_message:
  *   post:
  *     tags:
  *       - API về chat

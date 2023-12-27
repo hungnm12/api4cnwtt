@@ -8,7 +8,7 @@ const { isValidate } = require('../middlewares/validated.middleware.js')
 router.post('/get_mark_comment', isAuth, commentController.getMarkComment);
 /**
  * @openapi
- * /it4788/comment/get_mark_comment:
+ * /api/comment/get_mark_comment:
  *   post:
  *     tags:
  *       - API về bình luận
@@ -43,7 +43,7 @@ router.post('/get_mark_comment', isAuth, commentController.getMarkComment);
 router.post('/set_mark_comment', isAuth,commentController.setMarkComment);
 /**
  * @openapi
- * /it4788/comment/set_mark_comment:
+ * /api/comment/set_mark_comment:
  *   post:
  *     tags:
  *       - API về bình luận
